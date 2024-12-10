@@ -10,7 +10,7 @@ const ProductList = () => {
   useEffect(() => {
     // Simula una API para obtener productos
     const fetchProducts = async () => {
-      const response = await fetch('http://localhost:4000/products',{
+      const response = await fetch('https://faltshower.onrender.com/products',{
       });
       console.log("response",response.body);
       

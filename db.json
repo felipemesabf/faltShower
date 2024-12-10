@@ -3,17 +3,17 @@
     {
       "id": 1,
       "name": "Producto 1",
-      "reserved": true
+      "reserved": false
     },
     {
       "id": 2,
       "name": "Producto 2",
-      "reserved": true
+      "reserved": false
     },
     {
       "id": 3,
       "name": "Producto 3",
-      "reserved": true
+      "reserved": false
     }
   ]
 }

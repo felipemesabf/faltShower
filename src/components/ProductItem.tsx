@@ -7,7 +7,7 @@ const ProductItem = ({ product }:any) => {
   const reserveProduct = async () => {
     if (!isReserved) {
       setIsReserved(true);
-      await fetch(`http://localhost:4000/products/${product.id}`, {
+      await fetch(`https://faltshower.onrender.com/products/products/${product.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...product,reserved: true }),
