@@ -2,11 +2,12 @@ import { useState } from 'react';
 import { useAuth } from '../AuthContext';
 import { useNavigate } from 'react-router';
 import './Login.css'; 
+import Spinner from './Spinner';
 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const { login } = useAuth();
+  const { login, isLoading } = useAuth();
   const navigate = useNavigate();
 
   const handleLogin = async () => {
@@ -15,6 +16,10 @@ const Login = () => {
       navigate('/products');
     }
   };
+
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   return (
     <div className='general-container'>
@@ -33,7 +38,7 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button onClick={handleLogin}>Entrar</button>
+          <button onClick={handleLogin} disabled={isLoading}>Entrar</button>
         </div>
       </div>
       <div className="message-container">
