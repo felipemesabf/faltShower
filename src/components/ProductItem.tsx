@@ -21,7 +21,9 @@ const ProductItem = ({ product }:any) => {
 
   return (
     <div className="product-card">
-      <img src={product.urlImg} alt={product.name} className="product-image" />
+      <div className="image-wrapper">
+        <img src={product.urlImg} alt={product.name} className="product-image" />
+      </div>
       <h2>{product.name}</h2>
       <button onClick={reserveProduct} disabled={isReserved}>
         {isReserved ? 'Reservado' : 'Apartar'}

@@ -1,14 +1,59 @@
+.products-page {
+  padding: 2rem;
+  background: #f9f9f9;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Sección de encabezado con el botón de logout y el título */
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.header-section h1 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Estilos para el botón de cerrar sesión */
+.logout-btn {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #c62828;
+}
+
+/* Contenedor del mensaje */
+.message-container {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.message-container p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Contenedor de la lista de productos */
 .product-list-container {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
-}
-
-.message-container p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  max-width: 600px;
-  color: #555;
 }
