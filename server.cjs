@@ -11,7 +11,24 @@ server.use((req, res, next) => {
   next();
 });
 
+const originalRender = router.render;
+router.render = (req, res) => {
+  if (req.path === '/users') {
+    const data = res.locals;
+    const newData = data.data.map((obj)=>{
+      delete obj.psw;
+      return obj
+    })      
+    const transformedData = [...newData];
+
+    return res.jsonp(transformedData);
+  }
+  return originalRender(req, res);
+};
+
+
 server.use(router);
+server.use(middlewares)
 server.listen(4000, () => {
   console.log('JSON Server is running',4000);
 });
