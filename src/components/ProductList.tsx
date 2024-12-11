@@ -26,6 +26,12 @@ const ProductList = () => {
     <div>
     <button onClick={()=>logout()}>Logout</button>
     <h1>Listado de Productos</h1>
+    <div className="message-container">
+        <p>
+        "Si entre los productos que ves a continuación no encuentras algo que consideres imprescindible, ¡no te preocupes! Confiamos en tu criterio y sabemos que sabes lo que se necesita en un hogar. Adelante, estaremos encantados de recibir lo que desees brindarnos."
+        </p>
+      </div>
+    
     <div className="product-list-container">
       {products.map((product) => (
         <ProductItem key={product.id} product={product} />

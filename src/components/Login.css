@@ -1,9 +1,18 @@
+.general-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #f0f0f0;
+}
+
+/* Estilos para el contenedor de login que ya existían */
 .login-container {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Ocupa la altura total de la ventana */
-  background: #f0f0f0; /* Un fondo suave para contraste */
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .login-card {
@@ -45,3 +54,36 @@
 .login-card button:hover {
   background: #0055c9;
 }
+
+/* Estilos para el contenedor de mensajes */
+.message-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  box-sizing: border-box;
+  background: #ffffff;
+  color: #333;
+}
+
+/* Título principal del mensaje */
+.message-container h1 {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+/* Párrafos del mensaje */
+.message-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  color: #555;
+}
+
+/* Ajusta las fuentes y colores según tus preferencias */

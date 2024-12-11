@@ -4,3 +4,11 @@
   gap: 16px;
   justify-content: center;
 }
+
+.message-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  color: #555;
+}
