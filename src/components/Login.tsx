@@ -9,9 +9,9 @@ const Login = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
 
-  const handleLogin = () => {
+  const handleLogin = async () => {
     if (username.trim()) {
-      login(username,password);
+      await login(username,password);
       navigate('/products');
     }
   };

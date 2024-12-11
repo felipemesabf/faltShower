@@ -13,15 +13,23 @@ export const AuthProvider: React.FC<any>  = ({ children }) => {
   const [user, setUser] = useState<any>(null);
 
   const login = async (username:any, psw:any) => {
-    const response = await fetch(`https://faltshower.onrender.com/users?username=${username}&psw=${psw}`,{
-    // const response = await fetch(`http://localhost:4000/users?username=${username}&psw=${psw}`,{
-    });
-    const user:Array<User> = await response.json();
-    if(user.length === 0){
-      alert("User not found")
+    try {
+      const response = await fetch(`https://faltshower.onrender.com/users?username=${username}&psw=${psw}`,{
+      // const response = await fetch(`http://localhost:4000/users?username=${username}&psw=${psw}`,{
+      });
+      const user:Array<User> = await response.json();
+      console.log(user);
+      
+      if(user.length === 0){
+        alert("User not found")
+      }
+      setUser( user )
+    } catch (Error) {
+      alert("Error, Intenta de núevo");
+      console.error('Error',Error);
     }
-    setUser( user )
   };
+  
   const logout = () => setUser(null);
 
   return (
