@@ -59,7 +59,8 @@
     {"id": 29, "username": "fabian_americas", "psw": "L9tM6b", "nombre": "Fabián américas"},
     {"id": 30, "username": "manuel_americas", "psw": "K8mM6b", "nombre": "Manuel américas"},
     {"id": 31, "username": "bicho_rrea", "psw": "K8mM6b", "nombre": "Bicho rrea"},
-    {"id": 32, "username": "juan_stt", "psw": "KP6z6b", "nombre": "Juan Lozano"},
-    {"id": 33, "username": "wilber_colp", "psw": "KP6z6b", "nombre": "Wilber amaya"}
+    {"id": 32, "username": "juan_stt", "psw": "KPtL6b", "nombre": "Juan Lozano"},
+    {"id": 33, "username": "wilber_colp", "psw": "KP6z6b", "nombre": "Wilber amaya"},
+    {"id": 34, "username": "stiven_realth", "psw": "L9tL8b", "nombre": "Estiven realth"}
   ]    
 }
