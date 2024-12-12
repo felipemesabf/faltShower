@@ -61,6 +61,8 @@
     {"id": 31, "username": "bicho_rrea", "psw": "K8mM6b", "nombre": "Bicho rrea"},
     {"id": 32, "username": "juan_stt", "psw": "KPtL6b", "nombre": "Juan Lozano"},
     {"id": 33, "username": "wilber_colp", "psw": "KP6z6b", "nombre": "Wilber amaya"},
-    {"id": 34, "username": "stiven_realth", "psw": "L9tL8b", "nombre": "Estiven realth"}
+    {"id": 34, "username": "stiven_realth", "psw": "L9tL8b", "nombre": "Estiven realth"},
+    {"id": 35, "username": "henry_rrea", "psw": "L9tL8b", "nombre": "Henry Rrea"},
+    {"id": 36, "username": "walter_rrea", "psw": "L9tL8b", "nombre": "Walter Rrea"}
   ]    
 }
