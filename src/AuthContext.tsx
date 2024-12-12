@@ -25,8 +25,9 @@ export const AuthProvider: React.FC<any>  = ({ children }) => {
       
       if(user.length === 0){
         alert("User not found")
+      }else{
+        setUser( user )
       }
-      setUser( user )
     } catch (Error) {
       alert("Error, Intenta de núevo");
       console.error('Error',Error);
